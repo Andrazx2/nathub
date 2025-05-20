@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NatHub Main Page</title>
+  <link rel="icon" href="https://tr.rbxcdn.com/180DAY-1398bfa176ebc651dcf04ffe804c099e/150/150/Decal/Png/noFilter" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Game Card Styling */
+    .game-card {
+      background-color: #1f2937;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    }
+    .game-card .card-content {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+    .game-card:hover .card-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans scroll-smooth">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-gray-900 shadow-lg">
+    <div class="flex items-center space-x-3">
+      <img src="https://tr.rbxcdn.com/180DAY-1398bfa176ebc651dcf04ffe804c099e/150/150/Decal/Png/noFilter" alt="NatHub Logo" class="w-8 h-8 rounded-full">
+      <h1 class="text-2xl font-bold text-blue-400">NatHub</h1>
+    </div>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:text-blue-300 transition">Main</a></li>
+      <li><a href="/premium" class="hover:text-blue-300 transition">Premium</a></li>
+    </ul>
+  </nav>
+
+  <section class="text-center mt-20 px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">NatHub</h2>
+    <p class="text-gray-400 text-lg mb-8">Enhancing Your Roblox Exploiting Experience</p>
+    <a href="/discord" target="_blank" class="inline-flex items-center bg-[#5865F2] hover:bg-[#4752C4] text-white font-semibold px-6 py-3 rounded-lg shadow transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 mr-2"><path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.249a18.432 18.432 0 0 0-5.515 0 12.257 12.257 0 0 0-.617-1.25.077.077 0 0 0-.078-.036 19.736 19.736 0 0 0-4.885 1.515.069.069 0 0 0-.032.027C.533 9.045-.32 13.579.099 18.057a.082.082 0 0 0 .031.056c2.052 1.507 4.042 2.422 5.992 3.033a.077.077 0 0 0 .084-.027c.461-.63.873-1.295 1.226-1.994a.076.076 0 0 0-.041-.104 11.514 11.514 0 0 1-1.651-.795.077.077 0 0 1-.008-.128c.111-.083.222-.17.328-.256a.074.074 0 0 1 .077-.01c3.484 1.597 7.267 1.597 10.709 0a.074.074 0 0 1 .078.009c.106.086.217.173.33.257a.077.077 0 0 1-.006.127 10.876 10.876 0 0 1-1.652.794.076.076 0 0 0-.04.105c.36.698.772 1.362 1.225 1.993a.075.075 0 0 0 .084.028c1.95-.61 3.94-1.526 5.993-3.033a.077.077 0 0 0 .03-.056c.5-5.177-.838-9.663-3.548-13.661a.061.061 0 0 0-.03-.028zM8.02 15.331c-1.182 0-2.155-1.085-2.155-2.419 0-1.333.955-2.418 2.155-2.418 1.21 0 2.173 1.095 2.155 2.418 0 1.334-.955 2.419-2.155 2.419zm7.974 0c-1.182 0-2.155-1.085-2.155-2.419 0-1.333.955-2.418 2.155-2.418 1.21 0 2.173 1.095 2.155 2.418 0 1.334-.944 2.419-2.155 2.419z"/></svg>
+      Join Discord
+    </a>
+  </section>
+
+  <!-- Supported Games -->
+  <section id="features" class="mt-24 px-6">
+    <h3 class="text-3xl font-bold mb-8 text-center">Supported Games</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Game Card 1 -->
+      <div class="game-card">
+        <img src="https://tr.rbxcdn.com/180DAY-30ffcd9f74f2a3b19995b2aa4a44051e/768/432/Image/Webp/noFilter" alt="Fisch" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold">Fisch</h4>
+          <p class="text-gray-400">Auto fishing, and more, premium utilities included.</p>
+        </div>
+      </div>
+      <!-- Game Card 2 -->
+      <div class="game-card">
+        <img src="https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/768/432/Image/Webp/noFilter" alt="Dead Rails" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold">Dead Rails</h4>
+          <p class="text-gray-400">Auto Farm, ESP Enemy, ESP Item, and more.</p>
+        </div>
+      </div>
+      <!-- Game Card 3 -->
+      <div class="game-card">
+        <img src="https://tr.rbxcdn.com/180DAY-b5f5043e7c45ee9ef03e783c453f6fcb/768/432/Image/Webp/noFilter" alt="Beaks" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-semibold">Beaks</h4>
+          <p class="text-gray-400">Auto Farm, Teleport, and more, premium utilities included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why NatHub Section -->
+  <section id="choose" class="mt-24 text-center px-6 mb-20">
+    <h3 class="text-3xl font-bold mb-8">Why NatHub?</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m12 7h-6m6 4h-6m6 4h-6" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Smooth and Simple UI!</h4>
+        <p class="text-gray-400">Experience a clean and user-friendly interface for seamless navigation.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Support in Some Executors!</h4>
+        <p class="text-gray-400">Compatible with popular executors to enhance your experience.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8h18M3 16h18M3 12h18m-9 8v-4m0-4V4" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-2">Updated Daily & Weekly!</h4>
+        <p class="text-gray-400">Stay ahead with regular updates to keep features fresh and functional.</p>
+      </div>
+    </div>
+  </section>
+  <section id="statistics" class="mt-24 px-6">
+    <h3 class="text-3xl font-bold mb-8 text-center">Statistics</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Total Execute Statistics Card -->
+      <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg shadow-lg p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16v4H4zM4 12h16v8H4z" />
+          </svg>
+        </div>
+        <h4 class="text-2xl font-semibold mb-2 text-center">Total Execute Statistics</h4>
+        <p class="text-lg text-center">Over <span id="total-executions" class="font-bold">0</span> executions completed!</p>
+      </div>
+      <!-- Total Discord Members Card -->
+      <div class="bg-gradient-to-r from-green-500 to-green-700 text-white rounded-lg shadow-lg p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M12 14a4 4 0 100-8 4 4 0 000 8z" />
+          </svg>
+        </div>
+        <h4 class="text-2xl font-semibold mb-2 text-center">Total Discord Members</h4>
+        <p class="text-lg text-center">Join our <span id="total-discord-members" class="font-bold">0</span> active members!</p>
+      </div>
+      <!-- Total Premium Users Card -->
+      <div class="bg-gradient-to-r from-yellow-500 to-yellow-700 text-white rounded-lg shadow-lg p-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <div class="flex justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l2.09 6.26L20 9l-4.91 3.74L16 20l-4-3-4 3 1.09-7.26L4 9l5.91-1.74L12 2z" />
+          </svg>
+        </div>
+        <h4 class="text-2xl font-semibold mb-2 text-center">Total Premium Users</h4>
+        <p class="text-lg text-center">Over <span id="total-premium-users" class="font-bold">0</span> premium users subscribed!</p>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-12">
+    <p>&copy; 2025 NatHub. All rights reserved.</p>
+  </footer>
+  <script>
+    const apiUrl = 'https://pastebin.com/raw/QRVDpWra'; // Replace with your actual API URL
+    // Function to animate the value
+    function animateValue(id, start, end, duration) {
+      const element = document.getElementById(id);
+      const range = end - start;
+      const increment = range / (duration / 10);
+      let current = start;
+  
+      const timer = setInterval(() => {
+        current += increment;
+        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+          current = end;
+          clearInterval(timer);
+        }
+        element.textContent = Math.floor(current).toLocaleString();
+      }, 10);
+    }
+    async function fetchStatistics() {
+      try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        animateValue('total-executions', 0, data.totalExecutions, 6000);
+        animateValue('total-discord-members', 0, data.totalDiscordMembers, 6000);
+        animateValue('total-premium-users', 0, data.totalPremiumUsers, 6000);
+      } catch (error) {
+        console.error('Error fetching statistics:', error);
+      }
+    }
+    function startAnimation(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          fetchStatistics();
+          observer.disconnect();
+        }
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const statisticsSection = document.querySelector('#statistics');
+      const observer = new IntersectionObserver(startAnimation, {
+        root: null,
+        threshold: 0.5
+      });
+  
+      observer.observe(statisticsSection);
+    });
+  </script>
+</body>
+</html>
